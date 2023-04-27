@@ -67,12 +67,12 @@ def login():
                 ok = False
             if not '@' in form.pochta.data:
                 ok = False
-            if ok:
-                db_sess.add(user)
-                db_sess.commit()
-                user_email = form.pochta.data
-                return redirect('/success')
-            return f"""<!doctype html>
+        if ok:
+            db_sess.add(user)
+            db_sess.commit()
+            user_email = form.pochta.data
+            return redirect('/success')
+        return f"""<!doctype html>
                                         <html lang="en">
                                             <head>
                                                 <meta charset="utf-8">
