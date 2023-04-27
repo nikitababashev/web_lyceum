@@ -279,6 +279,7 @@ def oge_inf():
     return Task_creator.oge_po_informatike(user.name, user_email)
 
 
+#Никита, добавь свои задачи, которые у тебя в боте
 @app.route('/oge/math', methods=['GET', 'POST'])
 def oge_math():
     return f"""<!doctype html>
@@ -302,6 +303,7 @@ def oge_math():
                                 </html>"""
 
 
+#Никита, добавь свои задачи, которые у тебя в боте
 @app.route('/ege/math', methods=['GET', 'POST'])
 def ege_math():
     return f"""<!doctype html>
@@ -325,6 +327,7 @@ def ege_math():
                                 </html>"""
 
 
+#Никита, добавь свои задачи, которые у тебя в боте
 @app.route('/ege/inf', methods=['GET', 'POST'])
 def ege_inf():
     return f"""<!doctype html>
